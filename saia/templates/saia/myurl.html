@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="direction: rtl;">
+<div> 
+    <form action={% url "saia:do" %} method="post" style="margin-right: 450px;margin-top: 200px;">
+        {% csrf_token %}
+            <label for="port1" style="color: black;direction: rtl;">لینک طولانی اولیه خود را وارد کنید:</label><br>
+            <input type="text" name="portal1" id="port1"><br><br>
+            <label for="port2" style="color: black;">ادرس لینک کوتاه شده خود را بنویسید </label><br>
+            <input type="text" name="portal2" id="port2"><br><br>
+            
+            <input type="submit" value="بزن  بریم" style="width: 100px;height: 40px;">
+        </form>
+</div> 
+
+
+
+
+</div>
+
+
+</body>
+</html>
